@@ -12,6 +12,7 @@
   	<netty.version>5.0.0.Alpha1</netty.version>
   	<curator.version>2.7.0</curator.version>
   	<activemq.version>5.10.0</activemq.version>
+  	<bouncycastle.version>1.49</bouncycastle.version>
   </properties>
   
   <dependencies>
@@ -56,6 +57,12 @@
 	    <groupId>org.apache.activemq</groupId>
 	    <artifactId>activemq-all</artifactId>
 	    <version>${activemq.version}</version>
+	</dependency>
+    <!-- bouncycastle/bcprov-jdk15 -->
+	<dependency>
+	    <groupId>org.bouncycastle</groupId>
+	    <artifactId>bcprov-jdk15on</artifactId>
+	    <version>1.49</version>
 	</dependency>
     
   </dependencies>
