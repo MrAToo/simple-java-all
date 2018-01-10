@@ -9,6 +9,7 @@
   	<codec.version>1.10</codec.version>
   	<mongo.version>3.6.1</mongo.version>
   	<jedis.version>2.9.0</jedis.version>
+  	<netty.version>5.0.0.Alpha1</netty.version>
   </properties>
   
   <dependencies>
@@ -36,6 +37,11 @@
 	    <artifactId>jedis</artifactId>
 	    <version>${jedis.version}</version>
 	</dependency>
-  	
+  	<!-- netty -->
+	<dependency>
+		<groupId>io.netty</groupId>
+		<artifactId>netty-all</artifactId>
+		<version>5.0.0.Alpha1</version>
+	</dependency>
   </dependencies>
 </project>
