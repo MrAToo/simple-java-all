@@ -11,6 +11,7 @@
   	<jedis.version>2.9.0</jedis.version>
   	<netty.version>5.0.0.Alpha1</netty.version>
   	<curator.version>2.7.0</curator.version>
+  	<activemq.version>5.10.0</activemq.version>
   </properties>
   
   <dependencies>
@@ -49,6 +50,13 @@
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-recipes</artifactId>
         <version>${curator.version}</version>
-      </dependency>
+    </dependency>
+    <!-- activemq-all -->
+	<dependency>
+	    <groupId>org.apache.activemq</groupId>
+	    <artifactId>activemq-all</artifactId>
+	    <version>${activemq.version}</version>
+	</dependency>
+    
   </dependencies>
 </project>
