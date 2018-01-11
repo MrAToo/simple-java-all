@@ -1,4 +1,4 @@
-package com.mrdu.simple.netty;
+package com.mrdu.simple.netty.websocket;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
