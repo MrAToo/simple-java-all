@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <properties>
+  	<java.version>1.8</java.version>
   	<zk.version>3.4.11</zk.version>
   	<codec.version>1.10</codec.version>
   	<mongo.version>3.6.1</mongo.version>
@@ -13,6 +14,7 @@
   	<curator.version>2.7.0</curator.version>
   	<activemq.version>5.10.0</activemq.version>
   	<bouncycastle.version>1.49</bouncycastle.version>
+  	<sigar.version>1.6.4</sigar.version>
   </properties>
   
   <dependencies>
@@ -62,8 +64,30 @@
 	<dependency>
 	    <groupId>org.bouncycastle</groupId>
 	    <artifactId>bcprov-jdk15on</artifactId>
-	    <version>1.49</version>
+	    <version>${bouncycastle.version}</version>
 	</dependency>
-    
+    <!-- sigar -->
+	<dependency>
+	    <groupId>org.hyperic</groupId>
+	    <artifactId>sigar</artifactId>
+	    <version>${sigar.version}</version>
+	</dependency>
   </dependencies>
+  
+  
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-compiler-plugin</artifactId>
+		    <version>3.7.0</version>
+		    <configuration>
+		    	<source>${java.version}</source>
+		    	<target>${java.version}</target>
+		    	<encoding>UTF-8</encoding>
+		    </configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+  
 </project>
