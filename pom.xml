@@ -15,6 +15,7 @@
   	<activemq.version>5.10.0</activemq.version>
   	<bouncycastle.version>1.49</bouncycastle.version>
   	<sigar.version>1.6.4</sigar.version>
+  	<ehcache.version>2.10.2</ehcache.version>
   </properties>
   
   <dependencies>
@@ -71,6 +72,11 @@
 	    <groupId>org.hyperic</groupId>
 	    <artifactId>sigar</artifactId>
 	    <version>${sigar.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>net.sf.ehcache</groupId>
+	    <artifactId>ehcache</artifactId>
+	    <version>${ehcache.version}</version>
 	</dependency>
   </dependencies>
   
